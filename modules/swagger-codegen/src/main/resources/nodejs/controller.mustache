@@ -7,7 +7,7 @@ var {{classname}} = require('./{{classname}}Service');
 {{#operation}}
 
 module.exports.{{nickname}} = function {{nickname}} (req, res, next) {
-  {{classname}}.{{nickname}}(req.swagger.params, res, next);
+  {{classname}}.{{nickname}}(req, res, next);
 };
 {{/operation}}
 {{/operations}}
